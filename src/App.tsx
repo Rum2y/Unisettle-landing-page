@@ -3,6 +3,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Hero from "./components/hero";
 import Features from "./components/features";
 import AppScreenshots from "./components/appScreenshots";
+import PrivacyPolicy from "./components/privacyPolicy";
 import Support from "./components/support";
 import CallToAction from "./components/callToAction";
 import Footer from "./components/footer";
@@ -27,6 +28,16 @@ const router = createBrowserRouter([
       <>
         <NavBar />
         <Support />
+        <Footer />
+      </>
+    ),
+  },
+  {
+    path: "/privacy-policy",
+    element: (
+      <>
+        <NavBar />
+        <PrivacyPolicy />
         <Footer />
       </>
     ),

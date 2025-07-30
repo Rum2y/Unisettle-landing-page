@@ -11,7 +11,7 @@ export default function NavBar() {
           <img src={"/logo_1.png"} alt="UniSettle" className="h-full w-15" />
           <span className="text-xl font-bold text-[#0DA596]">UniSettle</span>
         </RouterLink>
-        {location.pathname !== "/support" && (
+        {location.pathname === "/" && (
           <nav className="hidden md:flex items-center space-x-8">
             <ScrollLink
               to="features"

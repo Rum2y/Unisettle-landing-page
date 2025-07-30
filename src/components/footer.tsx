@@ -1,6 +1,13 @@
-import { Box, Container, Typography, IconButton, Link } from "@mui/material";
+import {
+  Box,
+  Container,
+  Typography,
+  IconButton,
+  Link as MuiLink,
+} from "@mui/material";
 import { Instagram, Mail, Twitter, LinkedIn } from "@mui/icons-material";
 import Divider from "@mui/material/Divider";
+import { Link } from "react-router-dom";
 import Observer from "../framer";
 
 const Footer = () => {
@@ -9,7 +16,6 @@ const Footer = () => {
       <Box
         component="footer"
         sx={{
-          // backgroundColor: "#0DA596",
           color: "gray.50",
           py: 8,
           borderTop: "1px solid rgba(255, 255, 255, 0.1)",
@@ -55,13 +61,13 @@ const Footer = () => {
                 }}
               >
                 <Mail fontSize="small" />
-                <Link
+                <MuiLink
                   href="mailto:unisettleapp@gmail.com"
                   color="#0DA596"
                   underline="hover"
                 >
                   unisettleapp@gmail.com
-                </Link>
+                </MuiLink>
               </Typography>
             </Box>
 
@@ -128,19 +134,29 @@ const Footer = () => {
             </Box>
           </Box>
 
-          {/* Copyright */}
+          {/* Copyright and Privacy Policy */}
           <Divider />
           <Box
             sx={{
+              display: "flex",
+              flexDirection: { xs: "column", sm: "row" },
+              justifyContent: "center",
+              alignItems: "center",
+              gap: 2,
               borderTop: "1px solid rgba(255, 255, 255, 0.1)",
               mt: 2,
               pt: 4,
-              textAlign: "center",
             }}
           >
             <Typography variant="body2">
               © {new Date().getFullYear()} UniSettle. All rights reserved.
             </Typography>
+            <Link
+              to="/privacy-policy"
+              className="text-gray-500 hover:text-[#0DA596] transition-colors cursor-pointer"
+            >
+              Privacy Policy
+            </Link>
           </Box>
         </Container>
       </Box>
