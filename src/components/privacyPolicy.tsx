@@ -15,9 +15,7 @@ const PrivacyPolicy = () => {
             </h2>
 
             <div className="bg-white rounded-lg p-8 text-[#0DA596] space-y-6">
-              <p className="font-medium">
-                Effective Date: {new Date().toLocaleDateString()}
-              </p>
+              <p className="font-medium">Effective Date: 31st July, 2025</p>
 
               <p>
                 UniSettle ("we", "us", or "our") is committed to protecting your
