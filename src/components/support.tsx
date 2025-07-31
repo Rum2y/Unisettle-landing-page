@@ -99,6 +99,8 @@ const Support = () => {
                     backgroundColor: "#0b8a7d",
                   },
                 }}
+                href="https://docs.google.com/forms/d/e/1FAIpQLScO0FWV2uAVxBRbcRV4bub1kmsZBoOn3h1zuLZhsIsK5BgxEQ/viewform?usp=sharing&ouid=114907578930431964059"
+                target="_blank"
               >
                 Feedback Form
               </Button>
