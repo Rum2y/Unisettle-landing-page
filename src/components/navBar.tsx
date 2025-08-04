@@ -9,7 +9,9 @@ export default function NavBar() {
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         <RouterLink to="/" className="flex items-center space-x-3">
           <img src={"/logo_1.png"} alt="UniSettle" className="h-full w-15" />
-          <span className="text-xl font-bold text-[#0DA596]">UniSettle</span>
+          <span className="text-xl font-bold text-[#0DA596] hidden md:block">
+            UniSettle
+          </span>
         </RouterLink>
         {location.pathname === "/" && (
           <nav className="hidden md:flex items-center space-x-8">
@@ -29,12 +31,6 @@ export default function NavBar() {
             >
               How It Works
             </ScrollLink>
-            <RouterLink
-              to="/support"
-              className="text-gray-500 hover:text-[#0DA596] transition-colors cursor-pointer"
-            >
-              Support
-            </RouterLink>
             <ScrollLink
               to="download"
               smooth={true}

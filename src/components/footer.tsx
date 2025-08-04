@@ -51,6 +51,12 @@ const Footer = () => {
               <Typography variant="body2" sx={{ mb: 2, color: "gray" }}>
                 Your trusted guide for settling in Alberta, Canada.
               </Typography>
+              <Typography variant="body2" sx={{ mb: 2, color: "gray" }}>
+                Contact Support:{" "}
+                <Link to="/support" className="text-[#0DA596] hover:underline">
+                  Support
+                </Link>
+              </Typography>
               <Typography
                 variant="body2"
                 sx={{

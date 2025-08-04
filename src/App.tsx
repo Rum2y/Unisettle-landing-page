@@ -6,6 +6,7 @@ import AppScreenshots from "./components/appScreenshots";
 import PrivacyPolicy from "./components/privacyPolicy";
 import Support from "./components/support";
 import CallToAction from "./components/callToAction";
+import ScrollToTop from "./scrollToTop";
 import Footer from "./components/footer";
 
 const router = createBrowserRouter([
@@ -13,6 +14,7 @@ const router = createBrowserRouter([
     path: "/",
     element: (
       <>
+        <ScrollToTop />
         <NavBar />
         <Hero />
         <Features />
@@ -26,6 +28,7 @@ const router = createBrowserRouter([
     path: "/support",
     element: (
       <>
+        <ScrollToTop />
         <NavBar />
         <Support />
         <Footer />
@@ -36,6 +39,7 @@ const router = createBrowserRouter([
     path: "/privacy-policy",
     element: (
       <>
+        <ScrollToTop />
         <NavBar />
         <PrivacyPolicy />
         <Footer />
