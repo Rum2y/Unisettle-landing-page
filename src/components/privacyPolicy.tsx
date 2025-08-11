@@ -123,12 +123,12 @@ const PrivacyPolicy = () => {
                   <Globe className="h-5 w-5" />
                   <span>Website: </span>
                   <a
-                    href="https://unisettle.vercel.app"
+                    href="https://unisettle.ca"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="hover:underline"
                   >
-                    https://unisettle.vercel.app
+                    https://unisettle.ca
                   </a>
                 </div>
               </div>

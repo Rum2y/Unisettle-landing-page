@@ -4,6 +4,7 @@ import Hero from "./components/hero";
 import Features from "./components/features";
 import AppScreenshots from "./components/appScreenshots";
 import PrivacyPolicy from "./components/privacyPolicy";
+import TermsOfUse from "./components/TermsOfUse";
 import Support from "./components/support";
 import CallToAction from "./components/callToAction";
 import ScrollToTop from "./scrollToTop";
@@ -42,6 +43,17 @@ const router = createBrowserRouter([
         <ScrollToTop />
         <NavBar />
         <PrivacyPolicy />
+        <Footer />
+      </>
+    ),
+  },
+  {
+    path: "/terms-of-use",
+    element: (
+      <>
+        <ScrollToTop />
+        <NavBar />
+        <TermsOfUse />
         <Footer />
       </>
     ),
