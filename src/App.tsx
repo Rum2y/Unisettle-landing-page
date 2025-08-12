@@ -8,6 +8,8 @@ import TermsOfUse from "./components/TermsOfUse";
 import Support from "./components/support";
 import CallToAction from "./components/callToAction";
 import ScrollToTop from "./scrollToTop";
+import DeleteAccount from "./components/deleteAccount";
+import DeleteData from "./components/deleteData";
 import Footer from "./components/footer";
 
 const router = createBrowserRouter([
@@ -54,6 +56,28 @@ const router = createBrowserRouter([
         <ScrollToTop />
         <NavBar />
         <TermsOfUse />
+        <Footer />
+      </>
+    ),
+  },
+  {
+    path: "/delete-account",
+    element: (
+      <>
+        <ScrollToTop />
+        <NavBar />
+        <DeleteAccount />
+        <Footer />
+      </>
+    ),
+  },
+  {
+    path: "/delete-data",
+    element: (
+      <>
+        <ScrollToTop />
+        <NavBar />
+        <DeleteData />
         <Footer />
       </>
     ),

@@ -152,11 +152,14 @@ const Footer = () => {
               borderTop: "1px solid rgba(255, 255, 255, 0.1)",
               mt: 2,
               pt: 4,
+              flexWrap: "wrap",
             }}
           >
             <Typography variant="body2">
               © {new Date().getFullYear()} UniSettle. All rights reserved.
             </Typography>
+
+            {/* Existing Links */}
             <Link
               to="/privacy-policy"
               className="text-gray-500 hover:text-[#0DA596] transition-colors cursor-pointer"
@@ -168,6 +171,20 @@ const Footer = () => {
               className="text-gray-500 hover:text-[#0DA596] transition-colors cursor-pointer"
             >
               Terms of Use
+            </Link>
+
+            {/* New Data & Account Links */}
+            <Link
+              to="/delete-account"
+              className="text-gray-500 hover:text-[#0DA596] transition-colors cursor-pointer"
+            >
+              Delete Account
+            </Link>
+            <Link
+              to="/delete-data"
+              className="text-gray-500 hover:text-[#0DA596] transition-colors cursor-pointer"
+            >
+              Delete Data
             </Link>
           </Box>
         </Container>
