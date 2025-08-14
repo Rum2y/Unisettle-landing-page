@@ -25,6 +25,7 @@ const CallToAction = () => {
               <Button
                 size="large"
                 variant="contained"
+                href="https://apps.apple.com/ca/app/unisettle/id6749332997"
                 sx={{
                   backgroundColor: "white",
                   color: "#0DA596",

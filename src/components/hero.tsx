@@ -33,6 +33,7 @@ const Hero = () => {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button
                   variant="contained"
+                  href="#download"
                   sx={{
                     backgroundColor: "#0DA596",
                     color: "white",
